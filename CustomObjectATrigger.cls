@@ -1,5 +1,5 @@
 //Whenever Account status will change to Approved. Trigger will create ObjectB record and ObjectC record. ObjectB has direct relationship 
-//with Account and ObjectB. ObjectB has a master detail relastionship with ObjectC. So, ObjectCID__c is required field for ObjectB.
+//with Account and ObjectB. But ObjectB has a master detail relastionship with ObjectC. So, ObjectCID__c is required field for ObjectB.
 trigger CustomObjectATrigger on Account(after update){
     List<ObjectC__c> objCList = new List<ObjectC__c>();
     List<ObjectB__c> objBList = new List<ObjectC__c>();
